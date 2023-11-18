@@ -1,0 +1,525 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  background-color: white;
+  color: black;
+}
+/* header */
+.header{
+  padding: 40px 100px;
+  display: flex;
+  justify-content: space-between;
+
+}
+.leftnav{
+  font-size: 1.1rem;
+  display: flex;
+  gap: 30px;
+}
+
+.rightnav{
+  display: flex;
+  gap: 20px;
+}
+.rightnav img{
+  height: 25px;
+}
+.leftnav a {
+  text-decoration: none;
+  position: relative;
+
+}
+.leftnav a:before{
+  content: "";
+  position: absolute;
+  height: 5px;
+  bottom: 40px;
+  width: 0;
+  background-color: darkcyan;
+  border-radius: 3%;
+  transition:  0.3s ease;
+}
+.leftnav a:hover:before{
+  width: 100%;
+}
+/* Add media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .leftnav,
+  .rightnav {
+    margin-top: 20px;
+  }
+  .centernav{
+    display: none;
+  }
+  .rightnav {
+    margin-top: 20px;
+  }
+}
+/*  */
+
+.home {
+  margin-top: 70px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.left {
+  width: 100%;
+  max-width: 400px; /* Adjust the maximum width based on your design */
+  margin-bottom: 20px;
+}
+
+.right {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.right h1 {
+  font-size: 3rem;
+}
+
+.para {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.resume {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resume a {
+  margin-top: 20px;
+  width: 80%;
+  max-width: 200px; /* Adjust the maximum width based on your design */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  background-color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+}
+
+.marq{
+ /* border-radius: 40px; */
+ /* background-color: darkcyan; */
+ color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.marq2{
+  height: 100px;
+  width: 1250px;
+  display: flex;
+  gap: 20px;
+}
+.marq2 h1{
+  font-size: 3rem;
+}
+.image_wraper{
+  margin: 0px 30px;
+  overflow-x: hidden;
+  gap: 20px;
+}
+.imgSkill{
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+.mask1 {
+  -webkit-mask-image: url(/splash.webp);
+  mask-image: url(/splash.webp);
+  -webkit-mask-size: 100%;
+  mask-size: 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;    
+}
+
+/* sab settled ho chuka hai  */
+.external{
+  color: white;
+}
+.ro{
+  margin-top: -40px;
+}
+.hire{
+  background-color: black;
+  color: white;
+  border-radius: 20%;
+  padding: 10px;
+  margin-left: -135px;
+}
+
+.about{
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about h1{
+  font-size: 4rem;
+}
+
+.me{
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  padding: 10px 50px;
+}
+.meleft{
+  width: 33%;
+  padding-right: 20px;
+}
+.meleft h1{
+  font-size: 2rem;
+  font-weight: 600;
+}
+.meleft p{
+  margin-top: 20px;
+  word-spacing: 2px;
+}
+.meright{
+  width: 33%;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.meright h1{
+  font-size: 3rem;
+  font-weight: 600;
+}
+.meImage{
+  width: 34%;
+  border-radius: 20px;
+}
+.meimg{
+  border-radius: 20px;
+  margin-left: 60px;
+}
+@media only screen and (max-width: 768px) {
+  .me{
+    display: flex;
+    flex-direction: column;
+  }
+  .about h1{
+    font-size: 2.5rem;
+    font-weight: 800;
+  }
+  .meleft{
+    width: 100%;
+    margin-top: -20px;
+  }
+  .meleft p{
+    font-size: 1.2rem;
+  }
+  .meright{
+    width: 100%;
+    margin-top: 20px;
+  }
+  .meImage{
+    width: 100%;
+  }
+  .meimg{
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+.ecl{
+  background: repeating-radial-gradient(rgba(0,0,0,0.4) 2px , white 5px, white 100px);
+}
+.skills{
+  margin-top: 45px;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.skills2{
+  display: none;
+  padding: 10px;
+}
+.skills2 h1{
+  margin-top: 50px;
+  font-size: 3rem;
+  font-weight: 600;
+  padding-left: 20px;
+}
+.skills h1{
+  font-size: 4rem;
+  font-weight: 600;
+}
+.web{
+  background-color: black;
+  color: white;
+  /* z-index: 10; */
+}
+@media only screen and (max-width: 768px){
+  .skills{
+    display: none;
+  }
+  .skills2{
+    display: inline;
+  }
+}
+.footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 10px;
+  font-size: 1.1rem;
+}
+
+.leftfooter, .centerfooter, .rightfooter {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.rightfooter {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+@media only screen and (min-width: 600px) {
+  .footer {
+    flex-direction: row;
+    height: 10vh;
+  }
+
+  .leftfooter, .centerfooter, .rightfooter {
+    width: 33%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .footer {
+    height: 15vh;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .footer {
+    height: 20vh;
+  }
+}
+.tra{
+  background-color: rgb(9, 74, 96);
+}
+.tran{
+  background-color: rgb(253, 37, 156);
+}
+.trans{
+  background-color: rgb(198, 147, 242);
+}
+
+
+.scroll-section-outer {
+  overflow: hidden;
+}
+
+.scroll-section-inner {
+  height: 100vh;
+  width: 500vw;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.scroll-section {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll-section h3 {
+  color: var(--primaryTextColor);
+  letter-spacing: var(--headlineMedium);
+  font-size: 6rem;
+  text-transform: uppercase;
+}
+.project{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (max-width: 768px){
+  .project h3{
+    font-size: 3.4rem;
+  }
+}
+.home1{
+  /* padding: 50px 40px; */
+  height: 100vh;
+  display: flex;
+}
+.left1{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 768px){
+  .home1{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .left1{
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+  }
+}
+.primg{
+  width: 500px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.pr_right{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.pr_right h1{
+  font-size: 4rem;
+  display: flex;
+  align-self: flex-start;
+}
+@media only screen and (max-width: 768px){
+  .pr_right{
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .pr_right h1{
+    font-size: 2.4rem;
+  }
+}
+.show{
+  margin-top: 20px;
+  display: flex;
+  gap: 25px;
+  align-self: flex-start;
+}
+.prButton{
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.contact{
+  margin-top: -90px;
+  display: flex;
+  height: 100vh;
+}
+.lcontact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  gap: 20px;
+}
+.lcontact h1{
+  font-size: 4rem;
+}
+.rcontact{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.cvdo{
+  width: 500px;
+  height: 500px;
+}
+
+.lbox , .box2{
+  background-color: black;
+  color: white;
+  padding: 20px 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  border-radius: 20px;
+}
+.mail{
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+.profile{
+  margin-top: -120px;
+  border-radius: 100%;
+  animation: photoanimation 1.2s infinite ease-in-out alternate;
+}
+@media only screen and (max-width: 768px) {
+  .contact {
+    margin-top: 40px;
+    flex-direction: column;
+  }
+
+  .lcontact {
+    width: 100%;
+  }
+  .lcontact h1{
+    display: flex;
+    flex-direction: row;
+  }
+  .lbox ,.box2{
+    width: 100%;
+    border-radius: 0px;
+  }
+  .rcontact {
+    width: 100%;
+  }
+}
+@keyframes photoanimation{
+  to{
+      transform: translateY(-15px);
+  }
+}
+.shiva{
+  width: 600px;
+  /* height: 500px; */
+  border-radius: 20px;
+}
