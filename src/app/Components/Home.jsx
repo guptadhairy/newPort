@@ -22,9 +22,9 @@ const Home = () => {
           <h1>Turning Vision Into Reality With </h1>
           {/* <Marque /> */}
           <h1 className='text-blue-900'>Code And Design</h1>
-          <p className='para'>Greetings! I am Dhairya Gupta, a proficient full-stack developer passionate about transforming ideas into cutting-edge web applications. Dive into my portfolio to explore my latest projects, where I showcase my expertise in React.js, Next.js, and various facets of web development. Lets innovate and build something extraordinary together!</p>
+          <p className='para'>Greetings! I am Dhairya Gupta, a proficient MERN-stack web as well as app developer passionate about transforming ideas into cutting-edge web applications. Dive into my portfolio to explore my latest projects, where I showcase my expertise in React.js, Next.js, and various facets of web development. Lets innovate and build something extraordinary together!</p>
           <div className='resume' >
-            <Link target='_blank' href={'/Dhairya_resume(1).pdf'} download={true}>Resume <FiDownload size={'30px'} /> </Link>
+            <Link target='_blank' href={'/DhairyaGupta_resume.pdf'} download={true}>Resume <FiDownload size={"45px"} /> </Link>
           </div>
         </div>
       </div>

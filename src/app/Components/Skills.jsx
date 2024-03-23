@@ -24,14 +24,16 @@ const Skills = () => {
         </motion.div>
         <Skill name={'CSS'} x={'1vw'} y={'-10vw'} />
         <Skill name={'JavaScript'} x={'-30vw'} y={'0vw'} />
-        <Skill name={'React'} x={'30vw'} y={'0vw'} />
-        <Skill name={'Next'} x={'1vw'} y={'12vw'} />
+        <Skill name={'ReactJS'} x={'30vw'} y={'0vw'} />
+        <Skill name={'NextJS'} x={'1vw'} y={'12vw'} />
         <Skill name={'MongoDB'} x={'-1vw'} y={'-20vw'} />
         <Skill name={'NodeJs'} x={'-20vw'} y={'-12vw'} />
         <Skill name={'ExpressJs'} x={'20vw'} y={'-12vw'} />
-        <Skill name={'GSAP'} x={'-20vw'} y={'8vw'} />
+        <Skill name={'TypeScript'} x={'-20vw'} y={'8vw'} />
         <Skill name={'Tailwind'} x={'1vw'} y={'21vw'} />
-        <Skill name={'Canva'} x={'21vw'} y={'8vw'} />
+        <Skill name={'React Native'} x={'21vw'} y={'8vw'} />
+        <Skill name={'Git'} x={'35vw'} y={'-22vw'} />
+        <Skill name={'MySql'} x={'-30vw'} y={'-22vw'} />
       </div>
     </div>
     <div className='skills2'>
